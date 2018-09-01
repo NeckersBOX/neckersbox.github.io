@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "N3 Library", "index.html", [
+    [ "QuickStart", "md_docs_extra_QUICKSTART.html", null ],
     [ "LICENSE BSD-2-Clause", "md_LICENSE.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
