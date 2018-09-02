@@ -123,6 +123,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a327ffd586b67f586743d72a146c4ea95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__network_8c.html#a327ffd586b67f586743d72a146c4ea95">n3l_network_free</a> (<a class="el" href="structN3LNetwork.html">N3LNetwork</a> *net)</td></tr>
 <tr class="memdesc:a327ffd586b67f586743d72a146c4ea95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the network's allocated memory.  <a href="#a327ffd586b67f586743d72a146c4ea95">More...</a><br /></td></tr>
 <tr class="separator:a327ffd586b67f586743d72a146c4ea95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4783b7f9591e7d0b46bf43e4a399ce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structN3LNetwork.html">N3LNetwork</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__network_8c.html#aa4783b7f9591e7d0b46bf43e4a399ce4">n3l_network_clone</a> (<a class="el" href="structN3LNetwork.html">N3LNetwork</a> *net)</td></tr>
+<tr class="memdesc:aa4783b7f9591e7d0b46bf43e4a399ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone a network.  <a href="#aa4783b7f9591e7d0b46bf43e4a399ce4">More...</a><br /></td></tr>
+<tr class="separator:aa4783b7f9591e7d0b46bf43e4a399ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains functions to work with <a class="el" href="structN3LNetwork.html" title="Network state. ">N3LNetwork</a> type. </p>
@@ -167,6 +170,35 @@ Bias neurons, if specified, are added as last neuron in neurons list.</dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new network if built successfully, otherwise NULL.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structN3LArgs.html" title="Network arguments. ">N3LArgs</a>, <a class="el" href="n3__misc_8c.html#a22f4dc2ca9ee867a30c91565e37788d9" title="Get the defaults arguments to build the network. ">n3l_misc_init_arg</a>, <a class="el" href="structN3LNetwork.html" title="Network state. ">N3LNetwork</a>, <a class="el" href="n3__network_8c.html#a327ffd586b67f586743d72a146c4ea95" title="Free the network&#39;s allocated memory. ">n3l_network_free</a>, <a class="el" href="n3__file_8c.html#a4fef76548ed87845dceafaa9527a83d0" title="Import the network state from a previously saved file. ">n3l_file_import_network</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa4783b7f9591e7d0b46bf43e4a399ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4783b7f9591e7d0b46bf43e4a399ce4">&#9670;&nbsp;</a></span>n3l_network_clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structN3LNetwork.html">N3LNetwork</a>* n3l_network_clone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structN3LNetwork.html">N3LNetwork</a> *&#160;</td>
+          <td class="paramname"><em>net</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clone a network. </p>
+<p>Clone the <code>net</code> network with all layers, neurons, weights, targets, inputs and evaluated neuron's results.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">net</td><td>Network to clone. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new cloned network. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="n3__network_8c.html#a5f87e1efebd658dd55d7d2ca1768bdba" title="Build a new network. ">n3l_network_build</a>, <a class="el" href="n3__file_8c.html#a4fef76548ed87845dceafaa9527a83d0" title="Import the network state from a previously saved file. ">n3l_file_import_network</a>, <a class="el" href="n3__file_8c.html#aea5e504fe0f565507b01729737f16341" title="Export the current network state to the chosen file. ">n3l_file_export_network</a>, <a class="el" href="n3__network_8c.html#a327ffd586b67f586743d72a146c4ea95" title="Free the network&#39;s allocated memory. ">n3l_network_free</a>, <a class="el" href="n3__layer_8c.html#a808a3f30686e1045e875d51c1f68b5cf" title="Clone a layer. ">n3l_layer_clone</a> </dd></dl>
 
 </div>
 </div>

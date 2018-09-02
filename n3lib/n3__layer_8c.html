@@ -123,6 +123,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a34b79476ceb642057989ab8691b2ce1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="n3__header_8h.html#a9ee3a7104816bdb6222148cfe9ca8ad9">N3LLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__layer_8c.html#a34b79476ceb642057989ab8691b2ce1d">n3l_layer_build_before</a> (<a class="el" href="n3__header_8h.html#a9ee3a7104816bdb6222148cfe9ca8ad9">N3LLayer</a> *next, <a class="el" href="n3__header_8h.html#a1040baea07fec4d26d25641f75e892c5">N3LLayerType</a> ltype)</td></tr>
 <tr class="memdesc:a34b79476ceb642057989ab8691b2ce1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a layer linked to a next one.  <a href="#a34b79476ceb642057989ab8691b2ce1d">More...</a><br /></td></tr>
 <tr class="separator:a34b79476ceb642057989ab8691b2ce1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808a3f30686e1045e875d51c1f68b5cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="n3__header_8h.html#a9ee3a7104816bdb6222148cfe9ca8ad9">N3LLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__layer_8c.html#a808a3f30686e1045e875d51c1f68b5cf">n3l_layer_clone</a> (<a class="el" href="n3__header_8h.html#a9ee3a7104816bdb6222148cfe9ca8ad9">N3LLayer</a> *layer)</td></tr>
+<tr class="memdesc:a808a3f30686e1045e875d51c1f68b5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone a layer.  <a href="#a808a3f30686e1045e875d51c1f68b5cf">More...</a><br /></td></tr>
+<tr class="separator:a808a3f30686e1045e875d51c1f68b5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab06afb58d55be21a00bde5ee840f6425"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__layer_8c.html#ab06afb58d55be21a00bde5ee840f6425">n3l_layer_count</a> (<a class="el" href="n3__header_8h.html#a9ee3a7104816bdb6222148cfe9ca8ad9">N3LLayer</a> *head)</td></tr>
 <tr class="memdesc:ab06afb58d55be21a00bde5ee840f6425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the layers from the layer passed as argument.  <a href="#ab06afb58d55be21a00bde5ee840f6425">More...</a><br /></td></tr>
 <tr class="separator:ab06afb58d55be21a00bde5ee840f6425"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,6 +255,35 @@ Reference to previous layer is set to <code>next-&gt;prev</code> </dd>
 <dd>
 <code>next</code> reference to the previous layer is set to the current one.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="n3__layer_8c.html#a135215adb7cf8420293fd4ebd7049655" title="Build a layer. ">n3l_layer_build</a>, <a class="el" href="n3__layer_8c.html#ae58fb96c07e37c8645e8fd9f2a76c725" title="Build a layer linked to a previous one. ">n3l_layer_build_after</a>, <a class="el" href="n3__layer_8c.html#ad58e1630c1b7fc5da03d54cf63c394d9" title="Free the layer&#39;s allocated memory. ">n3l_layer_free</a> </dd></dl>
+
+</div>
+</div>
+<a id="a808a3f30686e1045e875d51c1f68b5cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a808a3f30686e1045e875d51c1f68b5cf">&#9670;&nbsp;</a></span>n3l_layer_clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="n3__header_8h.html#a9ee3a7104816bdb6222148cfe9ca8ad9">N3LLayer</a>* n3l_layer_clone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="n3__header_8h.html#a9ee3a7104816bdb6222148cfe9ca8ad9">N3LLayer</a> *&#160;</td>
+          <td class="paramname"><em>layer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clone a layer. </p>
+<p>Clone the <code>layer</code> with all neurons, weights and evaluated neuron's results.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer</td><td>Layer to clone. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new cloned layer. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="n3__layer_8c.html#a135215adb7cf8420293fd4ebd7049655" title="Build a layer. ">n3l_layer_build</a>, <a class="el" href="n3__layer_8c.html#ad58e1630c1b7fc5da03d54cf63c394d9" title="Free the layer&#39;s allocated memory. ">n3l_layer_free</a>, <a class="el" href="n3__neuron_8c.html#aade9dc9b06b49d46b50d6c183789394d" title="Clone a neuron. ">n3l_neuron_clone</a> </dd></dl>
 
 </div>
 </div>
