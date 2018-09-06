@@ -152,7 +152,7 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a95bd80c66274b8f2dc5dd76bd547432e"><td class="memItemLeft" align="right" valign="top"><a id="a95bd80c66274b8f2dc5dd76bd547432e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__header_8h.html#a95bd80c66274b8f2dc5dd76bd547432e">N3L_VERSION</a>&#160;&#160;&#160;&quot;2.0.1&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__header_8h.html#a95bd80c66274b8f2dc5dd76bd547432e">N3L_VERSION</a>&#160;&#160;&#160;&quot;2.0.2&quot;</td></tr>
 <tr class="memdesc:a95bd80c66274b8f2dc5dd76bd547432e"><td class="mdescLeft">&#160;</td><td class="mdescRight">N3 Library version. <br /></td></tr>
 <tr class="separator:a95bd80c66274b8f2dc5dd76bd547432e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -164,6 +164,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ab3b7d8e984e9ad2e4d5e7cbe433ad572"><td class="memItemLeft" align="right" valign="top">typedef double(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__header_8h.html#ab3b7d8e984e9ad2e4d5e7cbe433ad572">N3LWeightGenerator</a>) (void *)</td></tr>
 <tr class="memdesc:ab3b7d8e984e9ad2e4d5e7cbe433ad572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a function to get the network weights.  <a href="#ab3b7d8e984e9ad2e4d5e7cbe433ad572">More...</a><br /></td></tr>
 <tr class="separator:ab3b7d8e984e9ad2e4d5e7cbe433ad572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7192b27e221d7a9c8785cb3ddef926"><td class="memItemLeft" align="right" valign="top">typedef double(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__header_8h.html#a5c7192b27e221d7a9c8785cb3ddef926">N3LCSVData</a>) (char *)</td></tr>
+<tr class="memdesc:a5c7192b27e221d7a9c8785cb3ddef926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a custom data parser function.  <a href="#a5c7192b27e221d7a9c8785cb3ddef926">More...</a><br /></td></tr>
+<tr class="separator:a5c7192b27e221d7a9c8785cb3ddef926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac37c67a24ec253f5cd205cbc981922ca"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__n3l__weight.html">_n3l_weight</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__header_8h.html#ac37c67a24ec253f5cd205cbc981922ca">N3LWeight</a></td></tr>
 <tr class="memdesc:ac37c67a24ec253f5cd205cbc981922ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single Linked List which contains weight's values.  <a href="#ac37c67a24ec253f5cd205cbc981922ca">More...</a><br /></td></tr>
 <tr class="separator:ac37c67a24ec253f5cd205cbc981922ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,6 +221,24 @@ Enumerations</h2></td></tr>
 
 <p>Pointer to an activation function. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="n3__act_8c.html#af9034678bae2b94ebcf0d9b2ac5cfcb7" title="Get the pointer to an activation function. ">n3l_act</a>, <a class="el" href="n3__act_8c.html#a9253520cb5a58edf61f04997c3161f21" title="Get the pointer to an activation primitive function. ">n3l_act_prime</a>, <a class="el" href="struct__n3l__neuron.html" title="Double Linked List which contains neuron&#39;s values. ">_n3l_neuron</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5c7192b27e221d7a9c8785cb3ddef926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c7192b27e221d7a9c8785cb3ddef926">&#9670;&nbsp;</a></span>N3LCSVData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef double(* N3LCSVData) (char *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to a custom data parser function. </p>
+<p>Used to parse data and convert them to double when import inputs or targets from a CSV file.</p>
+<dl class="section see"><dt>See also</dt><dd>n3l_file_get_data_from_csv </dd></dl>
 
 </div>
 </div>

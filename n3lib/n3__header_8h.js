@@ -7,6 +7,7 @@ var n3__header_8h =
     [ "N3LNetwork", "structN3LNetwork.html", "structN3LNetwork" ],
     [ "N3L_VERSION", "n3__header_8h.html#a95bd80c66274b8f2dc5dd76bd547432e", null ],
     [ "N3LAct", "n3__header_8h.html#afb10e6f7012513b51225a4d3add36cae", null ],
+    [ "N3LCSVData", "n3__header_8h.html#a5c7192b27e221d7a9c8785cb3ddef926", null ],
     [ "N3LLayer", "n3__header_8h.html#a9ee3a7104816bdb6222148cfe9ca8ad9", null ],
     [ "N3LNeuron", "n3__header_8h.html#a621b1df037f351bd3542298933e5799a", null ],
     [ "N3LWeight", "n3__header_8h.html#ac37c67a24ec253f5cd205cbc981922ca", null ],
