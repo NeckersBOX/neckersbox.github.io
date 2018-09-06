@@ -125,7 +125,7 @@ Functions</h2></td></tr>
 <tr class="memitem:aea5e504fe0f565507b01729737f16341"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__file_8c.html#aea5e504fe0f565507b01729737f16341">n3l_file_export_network</a> (<a class="el" href="structN3LNetwork.html">N3LNetwork</a> *net, char *filename)</td></tr>
 <tr class="memdesc:aea5e504fe0f565507b01729737f16341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the current network state to the chosen file.  <a href="#aea5e504fe0f565507b01729737f16341">More...</a><br /></td></tr>
 <tr class="separator:aea5e504fe0f565507b01729737f16341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c7afb5f65ab3f48f80b25b04cb6949d"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__file_8c.html#a1c7afb5f65ab3f48f80b25b04cb6949d">n3l_file_get_csv_data</a> (FILE *csv, uint64_t row_offset, uint64_t col_offset, uint64_t size, <a class="el" href="n3__header_8h.html#a5c7192b27e221d7a9c8785cb3ddef926">N3LCSVData</a> data_parser)</td></tr>
+<tr class="memitem:a1c7afb5f65ab3f48f80b25b04cb6949d"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__file_8c.html#a1c7afb5f65ab3f48f80b25b04cb6949d">n3l_file_get_csv_data</a> (FILE *csv, uint64_t row_offset, uint64_t col_offset, uint64_t size, <a class="el" href="n3__header_8h.html#aa25c4fe50066ced6c15051cdf1b17353">N3LCSVData</a> data_parser)</td></tr>
 <tr class="memdesc:a1c7afb5f65ab3f48f80b25b04cb6949d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get inputs from an already opened csv file.  <a href="#a1c7afb5f65ab3f48f80b25b04cb6949d">More...</a><br /></td></tr>
 <tr class="separator:a1c7afb5f65ab3f48f80b25b04cb6949d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -233,7 +233,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="n3__header_8h.html#a5c7192b27e221d7a9c8785cb3ddef926">N3LCSVData</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="n3__header_8h.html#aa25c4fe50066ced6c15051cdf1b17353">N3LCSVData</a>&#160;</td>
           <td class="paramname"><em>data_parser</em>&#160;</td>
         </tr>
         <tr>
@@ -258,11 +258,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A dynamic allocated array of inputs or NULL on error.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The returned pointer should be free() manually. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="n3__header_8h.html#a5c7192b27e221d7a9c8785cb3ddef926" title="Pointer to a custom data parser function. ">N3LCSVData</a> </dd></dl>
-<p>Move row offset to the chosen one</p>
-<p>Validate fields number</p>
-<p>Move col offset to the chosen one</p>
-<p>Recover field's data </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="n3__header_8h.html#aa25c4fe50066ced6c15051cdf1b17353" title="Pointer to a custom data parser function. ">N3LCSVData</a> </dd></dl>
 
 </div>
 </div>
