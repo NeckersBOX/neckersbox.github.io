@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['h_5flayers',['h_layers',['../structN3LArgs.html#acbb947695cd6db88658a2a6fa78c1682',1,'N3LArgs']]],
-  ['h_5fsize',['h_size',['../structN3LArgs.html#ae875ef755586a29387def48249c98d81',1,'N3LArgs']]]
+  ['delta',['delta',['../struct____n3l__backward__data.html#ab41bb2c143496d239fe41b208809cc85',1,'__n3l_backward_data']]]
 ];

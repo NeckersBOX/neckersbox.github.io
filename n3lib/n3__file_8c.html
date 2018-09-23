@@ -125,9 +125,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aea5e504fe0f565507b01729737f16341"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__file_8c.html#aea5e504fe0f565507b01729737f16341">n3l_file_export_network</a> (<a class="el" href="structN3LNetwork.html">N3LNetwork</a> *net, char *filename)</td></tr>
 <tr class="memdesc:aea5e504fe0f565507b01729737f16341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the current network state to the chosen file.  <a href="#aea5e504fe0f565507b01729737f16341">More...</a><br /></td></tr>
 <tr class="separator:aea5e504fe0f565507b01729737f16341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c7afb5f65ab3f48f80b25b04cb6949d"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__file_8c.html#a1c7afb5f65ab3f48f80b25b04cb6949d">n3l_file_get_csv_data</a> (FILE *csv, uint64_t row_offset, uint64_t col_offset, uint64_t size, <a class="el" href="n3__header_8h.html#aa25c4fe50066ced6c15051cdf1b17353">N3LCSVData</a> data_parser)</td></tr>
-<tr class="memdesc:a1c7afb5f65ab3f48f80b25b04cb6949d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get inputs from an already opened csv file.  <a href="#a1c7afb5f65ab3f48f80b25b04cb6949d">More...</a><br /></td></tr>
-<tr class="separator:a1c7afb5f65ab3f48f80b25b04cb6949d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ee1c87ff0f5626cbbcf3a612716898"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__file_8c.html#a81ee1c87ff0f5626cbbcf3a612716898">n3l_file_get_csv_data_raw</a> (FILE *csv, uint64_t row_offset, uint64_t col_offset, uint64_t size)</td></tr>
+<tr class="memdesc:a81ee1c87ff0f5626cbbcf3a612716898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get inputs from an already opened csv file.  <a href="#a81ee1c87ff0f5626cbbcf3a612716898">More...</a><br /></td></tr>
+<tr class="separator:a81ee1c87ff0f5626cbbcf3a612716898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf5f690563ffca20f987e6f27da697a"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="n3__file_8c.html#a7cf5f690563ffca20f987e6f27da697a">n3l_file_get_csv_data_dbl</a> (FILE *csv, uint64_t row_offset, uint64_t col_offset, uint64_t size, <a class="el" href="n3__header_8h.html#aa25c4fe50066ced6c15051cdf1b17353">N3LCSVData</a> data_parser)</td></tr>
+<tr class="memdesc:a7cf5f690563ffca20f987e6f27da697a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get inputs from an already opened csv file.  <a href="#a7cf5f690563ffca20f987e6f27da697a">More...</a><br /></td></tr>
+<tr class="separator:a7cf5f690563ffca20f987e6f27da697a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains functions to import and save a network state. </p>
@@ -200,14 +203,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1c7afb5f65ab3f48f80b25b04cb6949d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c7afb5f65ab3f48f80b25b04cb6949d">&#9670;&nbsp;</a></span>n3l_file_get_csv_data()</h2>
+<a id="a7cf5f690563ffca20f987e6f27da697a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf5f690563ffca20f987e6f27da697a">&#9670;&nbsp;</a></span>n3l_file_get_csv_data_dbl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double* n3l_file_get_csv_data </td>
+          <td class="memname">double* n3l_file_get_csv_data_dbl </td>
           <td>(</td>
           <td class="paramtype">FILE *&#160;</td>
           <td class="paramname"><em>csv</em>, </td>
@@ -258,7 +261,62 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A dynamic allocated array of inputs or NULL on error.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The returned pointer should be free() manually. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="n3__header_8h.html#aa25c4fe50066ced6c15051cdf1b17353" title="Pointer to a custom data parser function. ">N3LCSVData</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="n3__header_8h.html#aa25c4fe50066ced6c15051cdf1b17353" title="Pointer to a custom data parser function. ">N3LCSVData</a>, <a class="el" href="n3__file_8c.html#a81ee1c87ff0f5626cbbcf3a612716898" title="Get inputs from an already opened csv file. ">n3l_file_get_csv_data_raw</a> </dd></dl>
+
+</div>
+</div>
+<a id="a81ee1c87ff0f5626cbbcf3a612716898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ee1c87ff0f5626cbbcf3a612716898">&#9670;&nbsp;</a></span>n3l_file_get_csv_data_raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char** n3l_file_get_csv_data_raw </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>csv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>row_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>col_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get inputs from an already opened csv file. </p>
+<p>Get a single line, from the <code>csv</code> current position.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">csv</td><td>Already opened in read mode csv file. </td></tr>
+    <tr><td class="paramname">row_offset</td><td>If 0 read from the current position, otherwise set the position to the <code>row_offset</code> line. </td></tr>
+    <tr><td class="paramname">col_offset</td><td>Start column from 0 to get the first data column </td></tr>
+    <tr><td class="paramname">size</td><td>Number of data to read from the <code>col_offset</code> index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A dynamic allocated array of inputs or NULL on error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The returned pointer should be free() manually. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="n3__file_8c.html#a7cf5f690563ffca20f987e6f27da697a" title="Get inputs from an already opened csv file. ">n3l_file_get_csv_data_dbl</a> </dd></dl>
 
 </div>
 </div>

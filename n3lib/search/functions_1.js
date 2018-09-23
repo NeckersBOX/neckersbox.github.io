@@ -21,7 +21,8 @@ var searchData=
   ['n3l_5fact_5ftanh_5fprime',['n3l_act_tanh_prime',['../n3__act_8c.html#a24f63de53f6417037d5bebec78e08870',1,'n3_act.c']]],
   ['n3l_5fbackward_5fpropagation',['n3l_backward_propagation',['../n3__backward_8c.html#a871c936d33bfb280aa548e2dfd5ff32c',1,'n3_backward.c']]],
   ['n3l_5ffile_5fexport_5fnetwork',['n3l_file_export_network',['../n3__file_8c.html#aea5e504fe0f565507b01729737f16341',1,'n3_file.c']]],
-  ['n3l_5ffile_5fget_5fcsv_5fdata',['n3l_file_get_csv_data',['../n3__file_8c.html#a1c7afb5f65ab3f48f80b25b04cb6949d',1,'n3_file.c']]],
+  ['n3l_5ffile_5fget_5fcsv_5fdata_5fdbl',['n3l_file_get_csv_data_dbl',['../n3__file_8c.html#a7cf5f690563ffca20f987e6f27da697a',1,'n3_file.c']]],
+  ['n3l_5ffile_5fget_5fcsv_5fdata_5fraw',['n3l_file_get_csv_data_raw',['../n3__file_8c.html#a81ee1c87ff0f5626cbbcf3a612716898',1,'n3_file.c']]],
   ['n3l_5ffile_5fimport_5fnetwork',['n3l_file_import_network',['../n3__file_8c.html#a4fef76548ed87845dceafaa9527a83d0',1,'n3_file.c']]],
   ['n3l_5fforward_5fpropagation',['n3l_forward_propagation',['../n3__forward_8c.html#abc37ac7f137db4d053e3b19ac8e6542a',1,'n3_forward.c']]],
   ['n3l_5flayer_5fbuild',['n3l_layer_build',['../n3__layer_8c.html#a135215adb7cf8420293fd4ebd7049655',1,'n3_layer.c']]],
@@ -48,5 +49,8 @@ var searchData=
   ['n3l_5fneuron_5fcount_5fweights',['n3l_neuron_count_weights',['../n3__neuron_8c.html#a8dbe10c6a0fec3f90e08a677c44db4cb',1,'n3_neuron.c']]],
   ['n3l_5fneuron_5ffree',['n3l_neuron_free',['../n3__neuron_8c.html#a3f9b33cd97e88140c8adadb483b1cea5',1,'n3_neuron.c']]],
   ['n3l_5fneuron_5fget_5fweight',['n3l_neuron_get_weight',['../n3__neuron_8c.html#a3a3cc0184911922f7e0d04956d8587a8',1,'n3_neuron.c']]],
-  ['n3l_5fneuron_5fset_5fcustom_5fact',['n3l_neuron_set_custom_act',['../n3__neuron_8c.html#a5c77fdd58896efb9fc224b1c4dd15f71',1,'n3_neuron.c']]]
+  ['n3l_5fneuron_5fset_5fcustom_5fact',['n3l_neuron_set_custom_act',['../n3__neuron_8c.html#a5c77fdd58896efb9fc224b1c4dd15f71',1,'n3_neuron.c']]],
+  ['n3l_5fthreads_5fadd',['n3l_threads_add',['../n3__threads_8c.html#a679abd631ccf4858c15642d5a8ee48ab',1,'n3_threads.c']]],
+  ['n3l_5fthreads_5fflush',['n3l_threads_flush',['../n3__threads_8c.html#a654acf788de48b1069ef6da0f5b05c26',1,'n3_threads.c']]],
+  ['n3l_5fthreads_5finit',['n3l_threads_init',['../n3__threads_8c.html#a185e6484c4398a44d640bcab7c481f4e',1,'n3_threads.c']]]
 ];

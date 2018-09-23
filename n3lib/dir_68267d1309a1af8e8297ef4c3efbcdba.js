@@ -16,5 +16,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "n3_network.c", "n3__network_8c.html", "n3__network_8c" ],
     [ "n3_network.h", "n3__network_8h_source.html", null ],
     [ "n3_neuron.c", "n3__neuron_8c.html", "n3__neuron_8c" ],
-    [ "n3_neuron.h", "n3__neuron_8h_source.html", null ]
+    [ "n3_neuron.h", "n3__neuron_8h_source.html", null ],
+    [ "n3_threads.c", "n3__threads_8c.html", "n3__threads_8c" ],
+    [ "n3_threads.h", "n3__threads_8h_source.html", null ]
 ];
